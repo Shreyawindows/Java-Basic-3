@@ -1,23 +1,9 @@
 public class array6 {
   public static void main(String[] args) {
-    // An array storing different ages
-    int ages[] = {20, 22, 18, 35, 48, 26, 87, 70};
+    String[] seats = {"Jenny", "Liam", "Angie", "Bo"};
 
-    float avg, sum = 0;
-
-    // Get the length of the array
-    int length = ages.length;
-
-    // Loop through the elements of the array
-    for (int age : ages) {
-      sum += age;
+    for (int i = 0; i < seats.length; i++) {
+      System.out.println("Seat number " + i + " is taken by " + seats[i]);
     }
-    
-    // Calculate the average by dividing the sum by the length
-    avg = sum / length;
-
-    // Print the average
-    System.out.println("The average age is: " + avg);
   }
 }
-
