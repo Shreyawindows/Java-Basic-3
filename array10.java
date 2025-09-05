@@ -1,10 +1,10 @@
 public class array10 {
-   public static void main(String[] args) {
-     int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
-     for (int i = 0; i < myNumbers.length; ++i) {
-        for(int j = 0; j < myNumbers[i].length; ++j) {
-           System.out.println(myNumbers[i][j]);
-        }
-     }
-   }
+  public static void main(String[] args) {
+    String[] seats = {"Jenny", "Liam", "Angie", "Bo"};
+
+    for (int i = 0; i < seats.length; i++) {
+      System.out.println("Seat number " + i + " is taken by " + seats[i]);
+    }
+  }
 }
+
