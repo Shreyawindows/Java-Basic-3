@@ -1,8 +1,15 @@
 public class array9 {
   public static void main(String[] args) {
-    int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
-    myNumbers[1][2] = 9;
-    System.out.println(myNumbers[1][2]); // Outputs 9 instead of 7
+    int[] numbers = {3, -1, 7, 0, 9};
+
+    for (int n : numbers) {
+      if (n < 0) {
+        continue; // skip negative numbers
+      }
+      if (n == 0) {
+        break; // stop loop when zero is found
+      }
+      System.out.println(n);
+    }
   }
 }
-
